@@ -1,0 +1,200 @@
+﻿html {
+  background-color: #00479d;
+  background-image: url("bg.png");
+  background-repeat: repeat-x;
+  background-position: left 0px top 149px;
+}
+body {
+  margin:0;
+  padding:0;
+  font-family: "Microsoft YaHei Light", sans-serif;
+  font-size: 16px;
+}
+p{
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+input{
+  box-sizing: border-box;
+  font-family: inherit;
+  font-weight: inherit;
+  border-width: 0px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5) inset;
+  color: #32373C;
+  outline: 0px none;
+  transition: 0.2s ease-in-out;
+  font-size: 24px;
+  width: 100%;
+  padding: 3px;
+  margin: 2px 6px 16px 0px;
+  background-color: rgb(105, 183, 229);
+}
+input:focus{
+  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.5) inset;
+}
+input:disabled{
+  background-color: #FFF;
+  box-shadow: 0px 0px 0px #FFF;
+  padding: 3px 0;
+}
+input[type="checkbox"], input[type="radio"] {
+  height: 25px;
+  width: 25px;
+  margin: 0px 6px 0px 0px !important;
+  padding: 0px !important;
+  vertical-align: middle;
+}
+button {
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: normal;
+  height: 36px;
+  margin: 0px;
+  padding: 4px 10px;
+  cursor: pointer;
+  border-width: 0px;
+  border-radius: 3px;
+  float: right;
+  background-color: #8957a1;
+  color: #FFF;
+  transition: 0.2s ease-in-out;
+}
+button:hover{
+  background-color: #ad6ecc;
+}
+#nav {
+  height: 150px;
+  background-color: #FFF;
+  background-image: url("tide.png");
+  background-repeat: repeat-x;
+  background-position: bottom;
+}
+#nav img{
+  margin: 0px auto 25px;
+  display: block;
+}
+#main {
+  width: 420px;
+  margin: auto;
+  padding: 80px 20px 20px;
+}
+@media all and (max-width: 749px) {
+  #main {
+    box-sizing: border-box;
+    width: 100%;
+  }
+  img {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+}
+.note {
+  margin-top: 20px;
+  margin-left: 0px;
+  padding: 26px 24px;
+  background: #FFF none repeat scroll 0% 0%;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+.info {
+  margin-top: 20px;
+  padding: 0px 24px;
+  color: #FFF;
+}
+.container{
+  overflow: hidden;
+}
+label {
+  color: #777;
+  vertical-align: middle;
+  line-height: 36px;
+}
+#auto-login {
+  float: left;
+}
+
+/*************/
+/* THE WHALE */
+/*************/
+
+#whale {
+  width: 210px;
+  height: 120px;
+  background-image: url("whale.png");
+  position: absolute;
+  top: -120px;
+  left: 50%;
+  margin-left: -105px;
+}
+#whale .hand {
+  width: 40px;
+  height: 30px;
+  background-image: url("hand.png");
+  transition: 0.2s ease-out;
+  position: absolute;
+  left: -10px;
+  bottom: -15px;
+}
+#whale .hand.hand-r {
+  left: 180px;
+}
+#whale.password .hand {
+  transform: translateX(20px) translateY(-30px) scale(0);
+}
+#whale.password .hand.hand-r {
+  transform: translateX(-20px) translateY(-30px) scale(0);
+}
+#whale .arms {
+  top: 38px;
+  position: absolute;
+  left: -40px;
+  width: 290px;
+  height: 82px;
+  overflow: hidden;
+}
+#whale .arms .arm {
+  width: 80px;
+  height: 130px;
+  position: absolute;
+  left: -10px;
+  top: 90px;
+  background-image: url("whale-arm.png");
+  transition: 0.2s ease-out;
+  transform: rotate(-10deg);
+}
+#whale .arms .arm.arm-r {
+  transform: rotate(10deg);
+  left: 220px;
+  background-image: url("whale-arm-r.png");
+}
+#whale.password .arms .arm {
+  transform: translateY(-75px) translateX(40px);
+}
+#whale.password .arms .arm.arm-r {
+  transform: translateY(-75px) translateX(-40px);
+}
+
+/*******旧版配色*******/
+
+/************************
+html {
+  background-color: #CBE2E8;
+  background-image: url("bg_retro.png");
+  background-position: left top;
+}
+#nav {
+  height: 150px;
+  background-color: transparent;
+  background-image: none;
+}
+input {
+  background-color: #F1F9FB;
+}
+#main {
+  padding-top: 0px;
+}
+/************************/
