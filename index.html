@@ -1,47 +1,73 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-	<title>南京大学 | 网络接入系统</title>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<meta content="width=device-width,initial-scale=1,user-scalable=no" name="viewport">
-	<script type="text/javascript" src="http://handsomeone.com/wp-includes/js/jquery/jquery.js?ver=1.11.2"></script>
-	<link href="pc_new.css" rel="stylesheet" type="text/css">
+  <title>南京大学 | 网络接入系统</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta content="width=device-width,initial-scale=1,user-scalable=no" name="viewport">
+  <link href="style.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
-	<div id="nav"><img src="njulogo.png" /></div>
-	<div id="main">
-		<div class="note" id="before">
-			<div id="whale">
-				<div class="hand"></div>
-				<div class="hand hand-r"></div>
-				<div class="arms">
-					<div class="arm"></div>
-					<div class="arm arm-r"></div>
-				</div>
-			</div>
-			<label>用户名<br /><input type="text" id="username" /></label>
-			<label>密码<br /><input type="password" id="password" /></label>
-			<div class="container">
-				<label id="auto-login"><input id="save_password" type="checkbox">记住密码</label>
-				<button type="submit" id="login_button">登录</button>
-			</div>
-		</div>
-		<div class="note">
-			通知示例：为了增强您的使用体验，强烈建议使用 <a href="#">Firefox</a> 浏览器或者 <a href="#">Chrome</a> 浏览器。
-		</div>
-		<div class="info">
-			服务电话：025-89683791
-		</div>
-	</div>
-<script type="text/javascript">
-var $ = jQuery;
-$('#after').hide();
-$('#password').focus(function() {
-	$('#whale').addClass('password');
-})
-$('#password').blur(function() {
-	$('#whale').removeClass('password');
-})
-</script>
+  <div id="nav"><img src="njulogo.png" /></div>
+  <div id="main">
+    <div class="note">
+      <div id="whale">
+        <div class="eye" id="eye-l" style="left:25.8px; top:68.4px;"></div>
+        <div class="eye" id="eye-r" style="left:166.2px; top:68.4px;"></div>
+        <div class="hand"></div>
+        <div class="hand hand-r"></div>
+        <div class="arms">
+          <div class="arm"></div>
+          <div class="arm arm-r"></div>
+        </div>
+      </div>
+
+      <div id="before">
+        <label>用户名
+          <br />
+          <input type="text" id="username" />
+        </label>
+        <label>密码
+          <br />
+          <input type="password" id="password" />
+        </label>
+        <div class="container">
+          <label id="auto-login">
+            <input id="save_password" type="checkbox">记住密码</label>
+          <button type="submit" id="login_button">登录</button>
+        </div>
+      </div>
+
+      <div id="after" style="display:none">
+        <label>用户名
+          <br />
+          <input type="text" disabled="disabled" value="b111110128" />
+        </label>
+        <label>当月在线
+          <br />
+          <input type="text" disabled="disabled" value="169小时47分钟" />
+        </label>
+        <label>网费余额
+          <br />
+          <input type="text" disabled="disabled" value="0.57元" />
+        </label>
+        <div class="container">
+          <button type="submit" id="logout_button">注销</button>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="note">
+      通知示例：为了增强您的使用体验，强烈建议使用 <a href="#">Firefox</a> 浏览器或者 <a href="#">Chrome</a> 浏览器。
+    </div>
+    <div class="info">
+      服务电话：025-89683791
+    </div>
+  </div>
+  <script src="main.js"></script>
 </body>
+
 </html>

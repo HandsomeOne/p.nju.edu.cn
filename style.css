@@ -130,6 +130,12 @@ label {
   left: 50%;
   margin-left: -105px;
 }
+#whale .eye {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-image: url("eye.png");
+}
 #whale .hand {
   width: 40px;
   height: 30px;
@@ -177,24 +183,3 @@ label {
 #whale.password .arms .arm.arm-r {
   transform: translateY(-75px) translateX(-40px);
 }
-
-/*******旧版配色*******/
-
-/************************
-html {
-  background-color: #CBE2E8;
-  background-image: url("bg_retro.png");
-  background-position: left top;
-}
-#nav {
-  height: 150px;
-  background-color: transparent;
-  background-image: none;
-}
-input {
-  background-color: #F1F9FB;
-}
-#main {
-  padding-top: 0px;
-}
-/************************/
