@@ -81,7 +81,7 @@ button:hover{
   margin: auto;
   padding: 80px 20px 20px;
 }
-@media all and (max-width: 749px) {
+@media all and (max-width: 460px) {
   #main {
     box-sizing: border-box;
     width: 100%;
