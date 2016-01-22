@@ -1,6 +1,6 @@
 ﻿html {
   background-color: #00479d;
-  background-image: url("bg.png");
+  background-image: url(../img/bg.png);
   background-repeat: repeat-x;
   background-position: left 0px top 149px;
 }
@@ -68,7 +68,7 @@ button:hover{
 #nav {
   height: 150px;
   background-color: #FFF;
-  background-image: url("tide.png");
+  background-image: url(../img/tide.png);
   background-repeat: repeat-x;
   background-position: bottom;
 }
@@ -124,7 +124,7 @@ label {
 #whale {
   width: 210px;
   height: 120px;
-  background-image: url("whale.png");
+  background-image: url(../img/whale.png);
   position: absolute;
   top: -120px;
   left: 50%;
@@ -134,12 +134,12 @@ label {
   position: absolute;
   width: 18px;
   height: 18px;
-  background-image: url("eye.png");
+  background-image: url(../img/eye.png);
 }
 #whale .hand {
   width: 40px;
   height: 30px;
-  background-image: url("hand.png");
+  background-image: url(../img/hand.png);
   transition: 0.2s ease-out;
   position: absolute;
   left: -10px;
@@ -168,14 +168,14 @@ label {
   position: absolute;
   left: -10px;
   top: 90px;
-  background-image: url("whale-arm.png");
+  background-image: url(../img/whale-arm.png);
   transition: 0.2s ease-out;
   transform: rotate(-10deg);
 }
 #whale .arms .arm.arm-r {
   transform: rotate(10deg);
   left: 220px;
-  background-image: url("whale-arm-r.png");
+  background-image: url(../img/whale-arm-r.png);
 }
 #whale.password .arms .arm {
   transform: translateY(-75px) translateX(40px);
