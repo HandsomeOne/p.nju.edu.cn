@@ -26,11 +26,16 @@ function getTransformedPoint(x, y, cx, cy, r) {
 
 var eyeL = document.querySelector('#eye-l')
 var eyeR = document.querySelector('#eye-r')
-var cxL = eyeL.getBoundingClientRect().left + 9
-var cyL = eyeL.getBoundingClientRect().top + 9
-var cxR = eyeR.getBoundingClientRect().left + 9
-var cyR = eyeR.getBoundingClientRect().top + 9
-window.addEventListener('mousemove', function (e) {
+var cxL, cyL, cxR, cyR
+window.addEventListener('resize', resize)
+function resize() {
+  cxL = eyeL.getBoundingClientRect().left + 9
+  cyL = eyeL.getBoundingClientRect().top + 9
+  cxR = eyeR.getBoundingClientRect().left + 9
+  cyR = eyeR.getBoundingClientRect().top + 9
+}
+resize()
+window.addEventListener('mousemove', function(e) {
   var x = e.clientX
   var y = e.clientY
   eyeL.style.left = 25.8 + getTransformedPoint(x, y, cxL, cyL, 5).x + 'px'
