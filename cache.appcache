@@ -1,0 +1,15 @@
+CACHE MANIFEST
+# v1 - 2016-04-26
+js/main.js
+css/style.css
+img/bg.png
+img/eye.png
+img/hand.png
+img/njulogo.png
+img/tide.png
+img/whale.png
+img/whale-arm.png
+img/whale-arm-r.png
+
+NETWORK:
+*
